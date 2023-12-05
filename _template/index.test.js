@@ -1,5 +1,7 @@
-const { parseInput, part1, part2 } = require('./index.js')
-const { getExampleInput, getInput } = require('./input.js')
+import { parseInput, part1, part2 } from './index.js'
+import { getExampleInput, getInput } from './input.js'
+import { test, expect } from 'jest'
+
 
 test('part 1 example', async () => {
   expect(part1(parseInput(await getExampleInput()))).toBe(0)
